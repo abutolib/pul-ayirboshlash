@@ -18,10 +18,12 @@ elForm.addEventListener('submit', function (evt) {
 
   if (elSelect.value == '1') {
     elResult.textContent = `Sizda $ ${elUserDollar.toFixed(4)} pul bor `;
-  } else if (elSelect.value == '3') {
-    elResult.textContent = `Sizda € ${elUserEuro.toFixed(4)} pul bor `;
-  } else {
+  }else if(elSelect.value == '2') {
     elResult.textContent = `Sizda ₽ ${elUserRubl.toFixed(4)} pul bor `;
+  }else if (elSelect.value == '3') {
+    elResult.textContent = `Sizda € ${elUserEuro.toFixed(4)} pul bor `;
+  }else{
+    elResult.textContent = `Iltimos biron bir valyutani tanlang`;
   }
 
 })
